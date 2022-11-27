@@ -199,14 +199,9 @@ a {
 }
 
 .section__image {
-  display: block;
   border: solid black 1px;
   width: 250px;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .section__image--horizontal {
@@ -266,15 +261,8 @@ a {
   background-color: #f1e5cf;
 }
 
-.footer__container {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2px 15px 2px;
-}
 
+/*
 @keyframes animation__bounce {
   0% {
     width: 100px;
