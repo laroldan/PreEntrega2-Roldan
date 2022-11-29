@@ -54,6 +54,7 @@ a {
   background-color: #f1e5cf;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 /*NAV*/
@@ -83,22 +84,18 @@ a {
 }
 
 .section__preg {
-  display: block;
   background-color: whitesmoke;
   border: solid black 2px;
-}
-
-.section__preg__item {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 
 .section__image {
   border: solid black 1px;
   width: 250px;
-  padding: 20px;
+  animation-name: Zoomimg;
+  animation-duration: 1s;
+  animation-delay: 50ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
 }
 
 .section__image--horizontal {
@@ -189,15 +186,26 @@ a {
   50%,
   80%,
   100% {
-    -webkit-transform: translateX(0);
+    transform: translateX(0);
     transform: translateX(0);
   }
   40% {
-    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
     transform: translateX(30px);
   }
   60% {
-    -webkit-transform: translateX(15px);
     transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+
+@keyframes Zoomimg {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
   }
 }
