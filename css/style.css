@@ -98,6 +98,20 @@ a {
   animation-fill-mode: backwards;
 }
 
+.section__image2 {
+  width: 500px;
+  filter: grayscale(50%);
+  animation-name: Zoomimg;
+  animation-duration: 1s;
+  animation-delay: 50ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+.section__image2:hover {
+  filter: none;
+}
+
 .section__image--horizontal {
   width: 500px;
 }
